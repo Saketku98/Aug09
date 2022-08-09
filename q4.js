@@ -5,11 +5,11 @@ var arr = [];
   {
    arr[x]=str.substring(x, y);
     }
-var combi = [];
+var a = [];
 var temp= "";
-var slen = Math.pow(2, arr.length);
+var len = Math.pow(2, arr.length);
 
-for (var i = 0; i < slen ; i++)
+for (var i = 0; i < len ; i++)
 {
     temp= "";
     for (var j=0;j<arr.length;j++) {
@@ -19,10 +19,10 @@ for (var i = 0; i < slen ; i++)
     }
     if (temp !== "")
     {
-        combi.push(temp);
+        a.push(temp);
     }
 }
-  console.log(combi.join("\n"));
+  console.log(a.join("\n"));
 }
 
 substrings("dog");
